@@ -7,9 +7,9 @@ website:
     left: "Blog made with [Quarto](https://quarto.org/), by Ravi Verma"
     right:
       - icon: github
-    href: https://github.com/rverma213/
+        href: https://github.com/rverma213/
       - icon: twitter
-    href: https://twitter.com/Raviii_Verma
+        href: https://twitter.com/Raviii_Verma
   navbar:
     right:
       - about.qmd
