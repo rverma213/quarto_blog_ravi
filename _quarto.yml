@@ -2,7 +2,14 @@ project:
   type: website
 
 website:
-  title: "quarto_blog_ravi"
+  title: "Ravi Verma"
+  page-footer:
+    left: "Blog made with [Quarto](https://quarto.org/), by Ravi Verma"
+    right:
+      - icon: github
+    href: https://github.com/rverma213/
+      - icon: twitter
+    href: https://twitter.com/Raviii_Verma
   navbar:
     right:
       - about.qmd
