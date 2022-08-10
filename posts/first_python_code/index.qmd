@@ -5,7 +5,16 @@ date: "2022-08-10"
 categories: [python]
 ---
 
-Below is a Python code snippet integrated in RStudio using Quarto. Needed to install 'reticulate', 'matplotlib' and 'jupyter'.
+Below is a Python code snippet integrated in RStudio using Quarto. Needed to install 'reticulate', 'matplotlib' and 'jupyter'. For example
+
+```{r}
+#library(reticulate)
+
+#conda_install("r-reticulate", "jupyter")
+
+```
+
+This Python code is from <https://quarto.org/docs/computations/python.html>
 
 ```{python}
 import numpy as np
