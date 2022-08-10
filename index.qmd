@@ -1,5 +1,5 @@
 ---
-title: "quarto_blog_ravi"
+title: "Blog about using Quarto"
 listing:
   contents: posts
   sort: "date desc"
