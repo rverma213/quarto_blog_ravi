@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Blog about using Quarto",
     "section": "",
-    "text": "news\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\nNo matching items"
+    "text": "python\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlinks\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -26,5 +26,19 @@
     "title": "My first attempt at blogging using Quarto",
     "section": "",
     "text": "Aiming to post content about Python, R, finance, fantasy football and any other random material that may apply."
+  },
+  {
+    "objectID": "posts/links_about_quarto/index.html",
+    "href": "posts/links_about_quarto/index.html",
+    "title": "Useful links for Quarto",
+    "section": "",
+    "text": "https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/\nhttps://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html\nhttps://github.com/beatrizmilz/blog-en/blob/main/_quarto.yml\nhttps://quarto.org/docs/get-started/hello/jupyter.html\nhttps://quarto.org/docs/computations/python.html"
+  },
+  {
+    "objectID": "posts/first_python_code/index.html",
+    "href": "posts/first_python_code/index.html",
+    "title": "First Python Code",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
   }
 ]

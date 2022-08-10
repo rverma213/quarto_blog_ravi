@@ -1,0 +1,18 @@
+---
+title: "Useful links for Quarto"
+author: "Ravi Verma"
+date: "2022-08-10"
+categories: [links]
+---
+
+Here are some useful links for using Quarto in terms of blogging and using Python code
+
+-   <https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/>
+
+-   <https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html>
+
+-   <https://github.com/beatrizmilz/blog-en/blob/main/_quarto.yml>
+
+-   <https://quarto.org/docs/get-started/hello/jupyter.html>
+
+-   <https://quarto.org/docs/computations/python.html>
