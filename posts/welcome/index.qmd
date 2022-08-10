@@ -1,5 +1,5 @@
 ---
-title: "My hopeless attempt at blogging using Quarto"
+title: "My first attempt at blogging using Quarto"
 author: "Ravi Verma"
 date: "2022-08-10"
 categories: [news]
@@ -7,4 +7,4 @@ categories: [news]
 
 This is my first attempt to create a blog and blog post using Quarto :)
 
-Aiming to post content about Python, R, finance, fantasy football and material for when I start my Master's degree in Artificial Intelligence.
+Aiming to post content about Python, R, finance, fantasy football and any other random material that may apply.
