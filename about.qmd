@@ -1,8 +1,8 @@
 ---
 title: "About"
-image: profile.jpg
+image: profile_pic.jpg
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: twitter
       text: Twitter
@@ -15,4 +15,16 @@ about:
       href: https://github.com
 ---
 
-Code in Python and R. Interested in finance, fantasy football and making blogs with Quarto :)
+CFA Charterholder. Code in Python and R. Interested in finance, fantasy football and making blogs with Quarto :)
+
+## Education
+
+University of Bath \| Starting Sep 2022 - Jun 2027 MSc in Artificial Intelligence
+
+University of Southampton \| Sep 2010 - Jun 2013 BSc in Economics
+
+## Experience
+
+Alliance Bernstein \| October 2020 - present Quantitative Equity Research Associate
+
+Janus Henderson Investors \| Nov 2013 - Oct 2020 Investment/Liquidity Risk Analyst

@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Blog about using Quarto",
+    "title": "RV’s blog",
     "section": "",
     "text": "python\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlinks\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\nNo matching items"
   },
@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Code in Python and R. Interested in finance, fantasy football and making blogs with Quarto :)"
+    "text": "CFA Charterholder. Code in Python and R. Interested in finance, fantasy football and making blogs with Quarto :)"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -40,5 +40,19 @@
     "title": "First Python Code",
     "section": "",
     "text": "#library(reticulate)\n\n#conda_install(\"r-reticulate\", \"jupyter\")\n\nThis Python code is from https://quarto.org/docs/computations/python.html\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\nAlliance Bernstein | October 2020 - present Quantitative Equity Research Associate\nJanus Henderson Investors | Nov 2013 - Oct 2020 Investment/Liquidity Risk Analyst"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nUniversity of Bath | Starting Sep 2022 - Jun 2027 MSc in Artificial Intelligence\nUniversity of Southampton | Sep 2010 - Jun 2013 BSc in Economics"
   }
 ]
