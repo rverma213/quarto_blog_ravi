@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "RV’s blog",
     "section": "",
-    "text": "python\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlinks\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\nNo matching items"
+    "text": "finance\n\n\nmarkets\n\n\n\n\n\n\n\n\n\n\n\nSep 29, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npython\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlinks\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2022\n\n\nRavi Verma\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -54,5 +54,12 @@
     "title": "About",
     "section": "Education",
     "text": "Education\nUniversity of Bath | Starting Sep 2022 - Jun 2027 MSc in Artificial Intelligence\nUniversity of Southampton | Sep 2010 - Jun 2013 BSc in Economics"
+  },
+  {
+    "objectID": "posts/LDI_basics/index.html",
+    "href": "posts/LDI_basics/index.html",
+    "title": "LDI Market Dyamics",
+    "section": "",
+    "text": "https://bondvigilantes.com/blog/2022/09/collateral-calls/\nhttps://www.ft.com/content/038b30c3-f550-4cc0-93ed-9154021d6ee2\nhttps://www.ft.com/content/83927688-e0d1-4934-8d91-e279da6d6b6c\nhttps://criticalfinance.org/2022/09/29/pension-funds-and-liquidity-spirals/\nhttps://principlesandinterest.wordpress.com/2022/09/28/liability-driven-investment-ldi-quick-explainer/\n\nUltimately the issue is due to gilts being used as collateral for derivatives and the huge increase in gilt yields forcing margin calls therefore requiring pension funds to sell assets (liquid or otherwise) to meet those margin calls. Given the systemic nature of the issue, the Bank of England (BoE) had to step in to buy gilts and thus stabilizing yields.\nUseful graph/example to visualize assets and liabilities:\n\nUseful equation on how to think about pension funding:"
   }
 ]

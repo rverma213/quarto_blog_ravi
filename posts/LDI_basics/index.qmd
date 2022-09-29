@@ -1,0 +1,28 @@
+---
+title: "LDI Market Dyamics"
+author: "Ravi Verma"
+date: "2022-09-29"
+categories: [finance, markets]
+---
+
+Following the recent turmoil in the UK LDI market, here are some blogs with useful explanations about what is happening and why:
+
+-   <https://bondvigilantes.com/blog/2022/09/collateral-calls/>
+
+-   <https://www.ft.com/content/038b30c3-f550-4cc0-93ed-9154021d6ee2>
+
+-   <https://www.ft.com/content/83927688-e0d1-4934-8d91-e279da6d6b6c>
+
+-   <https://criticalfinance.org/2022/09/29/pension-funds-and-liquidity-spirals/>
+
+-   <https://principlesandinterest.wordpress.com/2022/09/28/liability-driven-investment-ldi-quick-explainer/>
+
+Ultimately the issue is due to gilts being used as collateral for derivatives and the huge increase in gilt yields forcing margin calls therefore requiring pension funds to sell assets (liquid or otherwise) to meet those margin calls. Given the systemic nature of the issue, the Bank of England (BoE) had to step in to buy gilts and thus stabilizing yields.
+
+Useful graph/example to visualize assets and liabilities:
+
+![](images/paste-A8724AE3.png)
+
+Useful equation on how to think about pension funding:
+
+![](images/paste-031904B7.png)
