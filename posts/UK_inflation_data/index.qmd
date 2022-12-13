@@ -39,7 +39,6 @@ Checking with Python code that we can use the CPIH data we recently downloaded e
 ```{python}
 
 import pandas
-
 cpih_test =r.df_CPIH_monthly
 print(cpih_test.head(5))
 ```
@@ -75,5 +74,6 @@ ax.annotate(text='Latest inflation is 9.6%',
             xycoords='data',
             textcoords='offset points',
             wrap=True)
+plt.tight_layout()
 plt.show()
 ```
