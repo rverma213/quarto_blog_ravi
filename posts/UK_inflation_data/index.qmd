@@ -1,8 +1,8 @@
 ---
 title: "UK CPIH Inflation Data"
 author: "Ravi Verma"
-date: "2022-13-12"
-categories: [python]
+date: "2022-12-13"
+categories: [python, UK, inflation]
 ---
 
 Let's install the package DBnomics which contains a plethora of macroeconomic data.
@@ -37,7 +37,6 @@ Little bit of code to install pandas so we can use later on.
 Checking with Python code that we can use the CPIH data we recently downloaded earlier.
 
 ```{python}
-
 import pandas
 cpih_test =r.df_CPIH_monthly
 print(cpih_test.head(5))
