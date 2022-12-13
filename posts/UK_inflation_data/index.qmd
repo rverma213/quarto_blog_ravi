@@ -1,0 +1,79 @@
+---
+title: "UK CPIH Inflation Data"
+author: "Ravi Verma"
+date: "2022-13-12"
+categories: [python]
+---
+
+Let's install the package DBnomics which contains a plethora of macroeconomic data.
+
+```{r}
+# install.packages("rdbnomics")
+library(rdbnomics)
+```
+
+We're interested in using the official inflation data by the Office for National Statistics which is the official provider of UK economic statistics.
+
+Specifically we want CPIH data.
+
+```{r}
+df_CPIH_monthly <- rdb(ids = "ONS/MM23/L55O.M")
+
+```
+
+As we're doing the plotting in Python we want to attach the dataset so we can interact with Python and use specific plotting packages with respect to Python.
+
+```{r}
+attach(df_CPIH_monthly)
+```
+
+Little bit of code to install pandas so we can use later on.
+
+```{r}
+# library(reticulate)
+# conda_install("r-reticulate", "pandas")
+```
+
+Checking with Python code that we can use the CPIH data we recently downloaded earlier.
+
+```{python}
+
+import pandas
+
+cpih_test =r.df_CPIH_monthly
+print(cpih_test.head(5))
+```
+
+Plotting the CPIH data in Python using Matplotlib.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+import matplotlib.dates as mdates
+import datetime as dt
+
+df_CPIH_monthly = r.df_CPIH_monthly
+df_CPIH_monthly['value_percentage'] = df_CPIH_monthly['value'] / 100
+
+fig, ax = plt.subplots()
+ax.plot(df_CPIH_monthly['period'], df_CPIH_monthly['value_percentage'])
+ax.set_title("UK CPIH Inflation: 12 months to October 2022")
+ax.set_ylabel("Inflation Rate")
+ax.set_xlabel("Date")
+ax.yaxis.set_major_formatter(ticker.PercentFormatter(1))
+ax.annotate(text='Data Source: DBnomics, Graphic by Ravi Verma',
+            xy=(0, 0),
+            xytext=(-60, -40),
+            fontsize=9,
+            xycoords='axes fraction',
+            textcoords='offset points')
+ax.annotate(text='Latest inflation is 9.6%',
+            xy=(mdates.date2num(dt.datetime(2022, 10, 0o1)), 0.096),
+            xytext=(-120, -10),
+            fontsize=10,
+            xycoords='data',
+            textcoords='offset points',
+            wrap=True)
+plt.show()
+```

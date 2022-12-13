@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/UK_inflation_data/index.html",
       "/posts/LDI_basics/index.html",
       "/posts/first_python_code/index.html",
       "/posts/links_about_quarto/index.html",
