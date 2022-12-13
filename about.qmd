@@ -6,25 +6,27 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/Raviii_Verma
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/ravi-verma-cfa-79600546/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/rverma213
 ---
 
 CFA Charterholder. Code in Python and R. Interested in finance, fantasy football and making blogs with Quarto :)
 
 ## Education
 
-University of Bath \| Starting Sep 2022 - Jun 2027 MSc in Artificial Intelligence
+-   BSc Economics - University of Southampton 2010 - 2013
 
-University of Southampton \| Sep 2010 - Jun 2013 BSc in Economics
+-   MSc Artificial Intelligence - University of Bath 2022 - Present
+
+-   Chartered Financial Analyst
 
 ## Experience
 
-Alliance Bernstein \| October 2020 - present Quantitative Equity Research Associate
+-   Alliance Bernstein - Quantitative Equity Research Associate 2020 - 2022
 
-Janus Henderson Investors \| Nov 2013 - Oct 2020 Investment/Liquidity Risk Analyst
+-   Janus Henderson Investors - Investment/Liquidity Risk Analyst 2013 - 2020
