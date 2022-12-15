@@ -11,7 +11,7 @@ format:
     code-summary: "Show the code"
 ---
 
-The latest UK CPI figures were released for November 2022
+The latest UK CPI figures were released for November 2022 by the Office for National Statistics. This post looks at CPI figures (not to be confused with CPIH, RPI etc.)
 
 ```{r}
 #| echo: false
@@ -38,6 +38,9 @@ data_ends <-
 
 ```{r}
 #| fig-column: page-right
+#| label: fig-cap-margin1
+#| fig-cap: "CPI inflation since 1990"
+#| cap-location: margin
 # plot 1
 ggplot(df_overall_inflation, aes(period, value/100)) +
   geom_line(lwd=1, colour="darkblue") +
@@ -81,6 +84,9 @@ df_goods_services$stat_type <- word(df_goods_services$stat, 1)
 
 ```{r}
 #| fig-column: page-right
+#| label: fig-cap-margin2
+#| fig-cap: "CPI inflation by goods and services"
+#| cap-location: margin
 # plot 2
 p <- ggplot(df_goods_services, aes(period, value/100, colour=stat_type)) + geom_line(lwd=1) 
 p + labs(x = "Date",
@@ -140,6 +146,9 @@ df_latest <-
 
 ```{r}
 #| fig-column: page-right
+#| label: fig-cap-margin3
+#| fig-cap: "Contribution to CPI inflation by sector"
+#| cap-location: margin
 # plot 3
 p <- ggplot(df, aes(period, value/100, colour=sector)) + geom_line(lwd=1) + scale_color_viridis(discrete = TRUE) 
 p + labs(x = "Date",
@@ -167,6 +176,9 @@ Analyse inflation by sector looking at the time series of each sector individual
 
 ```{r}
 #| fig-column: page-right
+#| label: fig-cap-margin4
+#| fig-cap: "Contribution to CPI inflation by sector"
+#| cap-location: margin
 # plot 4
 ggplot(df, aes(period, value/100)) +
   geom_line(lwd=1) +
@@ -187,6 +199,9 @@ What if we create a similar graph but change the y axis for each chart such that
 
 ```{r}
 #| fig-column: page-right
+#| label: fig-cap-margin5
+#| fig-cap: "Contribution to CPI inflation by sector"
+#| cap-location: margin
 # plot 5 - relative scales
 ggplot(df, aes(period, value/100)) +
   geom_line(lwd=1) +
@@ -206,6 +221,9 @@ Specifically looking at the YoY inflation to November 2022 we can see which sect
 
 ```{r}
 #| fig-column: page-right
+#| label: fig-cap-margin6
+#| fig-cap: "Contribution to CPI inflation by sector"
+#| cap-location: margin
 # plot 6
 waterfall(df_latest[,c("value", 'sector')], calc_total = TRUE, total_rect_color = "#ED7D31", total_axis_text = "Total (CPI Inflation)", 
        fill_colours = rep(c("#4472C4"), 12), fill_by_sign = FALSE) +

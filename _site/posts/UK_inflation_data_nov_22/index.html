@@ -123,7 +123,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -192,14 +192,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
-<p>The latest UK CPI figures were released for November 2022</p>
+<p>The latest UK CPI figures were released for November 2022 by the Office for National Statistics. This post looks at CPI figures (not to be confused with CPIH, RPI etc.)</p>
 <div class="cell">
 
 </div>
@@ -226,8 +228,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="fl">0.02</span>, <span class="at">linetype=</span><span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">"1991-05-01"</span>, <span class="st">"%Y-%m-%d"</span>), <span class="at">y=</span><span class="fl">0.02</span>, <span class="at">label =</span> <span class="st">"BoE Target is 2%"</span>, <span class="at">vjust =</span> <span class="dv">0</span>), <span class="at">nudge_y =</span> <span class="sc">-</span><span class="fl">0.009</span>, <span class="at">check_overlap =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output-display column-page-right">
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output-display column-page-right page-columns page-full">
+<div id="fig-cap-margin1" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cap-margin1-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure 1: CPI inflation since 1990</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Assessing inflation by breaking it down into Goods and Services.</p>
@@ -258,8 +265,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">data =</span> <span class="fu">filter</span>(df_goods_services, period <span class="sc">==</span> <span class="fu">max</span>(period)),<span class="fu">aes</span>(<span class="at">label =</span> stat_type, <span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">"2018-01-01"</span>, <span class="st">"%Y-%m-%d"</span>)),<span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">nudge_x =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">check_overlap =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">coord_cartesian</span>(<span class="at">clip =</span> <span class="st">'off'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output-display column-page-right">
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output-display column-page-right page-columns page-full">
+<div id="fig-cap-margin2" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cap-margin2-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure 2: CPI inflation by goods and services</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Decomposing CPI inflation into various sectors to see which contribute the highest to inflation.</p>
@@ -291,8 +303,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">nudge_x =</span> <span class="fl">0.5</span>, <span class="at">check_overlap =</span> <span class="cn">TRUE</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">clip =</span> <span class="st">'off'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output-display column-page-right">
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output-display column-page-right page-columns page-full">
+<div id="fig-cap-margin3" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cap-margin3-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure 3: Contribution to CPI inflation by sector</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Analyse inflation by sector looking at the time series of each sector individually.</p>
@@ -313,8 +330,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"UK CPI Inflation: Sector Contributions"</span>, </span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Data Source: ONS, DBnomics. Graphic by @Ravi Verma"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output-display column-page-right">
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output-display column-page-right page-columns page-full">
+<div id="fig-cap-margin4" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cap-margin4-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure 4: Contribution to CPI inflation by sector</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <p>What if we create a similar graph but change the y axis for each chart such that it is relative to each other.</p>
@@ -335,8 +357,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"UK CPI Inflation: Sector Contributions"</span>, </span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Data Source: ONS, DBnomics. Graphic by @Ravi Verma"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output-display column-page-right">
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output-display column-page-right page-columns page-full">
+<div id="fig-cap-margin5" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cap-margin5-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure 5: Contribution to CPI inflation by sector</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Specifically looking at the YoY inflation to November 2022 we can see which sectors contribute to inflation the most.</p>
@@ -359,8 +386,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">colour =</span> <span class="st">"black"</span>)) <span class="sc">+</span></span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">12</span>) ,<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">accuracy =</span> <span class="fl">0.01</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output-display column-page-right">
-<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output-display column-page-right page-columns page-full">
+<div id="fig-cap-margin6" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cap-margin6-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure 6: Contribution to CPI inflation by sector</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 
